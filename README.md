@@ -1,10 +1,5 @@
 ## Docker Desktop Windows Installation Guide
 
-**PC Info:** Intel Core i5-10400 @ 2.90GHz | 8GB RAM | 64-bit OS, x64-based processor
-
-Ei PC WSL2 backend er minimum requirement thik thik pura kore (SLAT support ache, 64-bit, 8GB RAM).
-
----
 
 ## Step 1: WSL 2 Enable + Update Kora
 
