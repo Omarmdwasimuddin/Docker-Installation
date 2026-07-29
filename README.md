@@ -27,19 +27,7 @@ wsl --version
 
 ---
 
-## Step 2: Hardware Virtualization On Kora (BIOS/UEFI)
-
-Ei ta khub important — na thakle Docker chalbe na:
-
-1. PC restart kore BIOS/UEFI e jao (usually `Del` / `F2` / `F10` key — motherboard bhede alada hoy)
-2. **Intel VT-x** ba **Virtualization Technology** option khuje on koro
-3. Save kore exit koro
-
-Windows e already on ache kina check korte: **Task Manager > Performance tab > CPU** e "Virtualization: Enabled" lekha thakle beshi kichu korte hobe na.
-
----
-
-## Step 3: Docker Desktop Installer Download + Install
+## Step 2: Docker Desktop Installer Download + Install
 
 1. Download link: [Docker Desktop for Windows (x86_64)](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
 2. `.exe` file e double-click koro
