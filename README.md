@@ -2,13 +2,13 @@
 
 ## ধাপ ১: Docker Desktop Installer Download ও Install
 
-১. Download link: [Docker Desktop for Windows (x86_64)](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
-২. `.exe` ফাইলে double-click করো
-৩. Installer দুইটা option দেবে:
+#### ১. Download link: [Docker Desktop for Windows (x86_64)](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
+#### ২. `.exe` ফাইলে double-click করো
+#### ৩. Installer দুইটা option দেবে:
    - **Per-user** (recommended) — admin লাগবে না, `%LOCALAPPDATA%\Programs\DockerDesktop`-এ install হবে
    - **All users** — admin লাগবে
-৪. Configuration page-এ **"Use WSL 2 instead of Hyper-V"** checked আছে কিনা দেখে নাও (ঠিক আছে, এটা default)
-৫. Wizard অনুসরণ করে install সম্পূর্ণ করো
+#### ৪. Configuration page-এ **"Use WSL 2 instead of Hyper-V"** checked আছে কিনা দেখে নাও (ঠিক আছে, এটা default)
+#### ৫. Wizard অনুসরণ করে install সম্পূর্ণ করো
 
 ### Command Line দিয়ে Install (বিকল্প)
 ```console
