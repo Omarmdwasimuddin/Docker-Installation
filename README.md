@@ -1,45 +1,47 @@
-## Docker Desktop Windows Installation Guide
+# Docker Desktop Windows Installation Guide
 
+## ধাপ ১: WSL 2 Enable ও Update করা
 
-## Step 1: WSL 2 Enable + Update Kora
-
-PowerShell ba CMD **Administrator hisebe** open kore:
+PowerShell বা CMD **Administrator হিসেবে** ওপেন করে:
 
 ```powershell
 wsl --install
 ```
 
-Ei command WSL feature on kore, ar default Linux distro (Ubuntu) install kore dey. Restart magbe — restart kore dao.
+এই command WSL feature চালু করে, এবং default Linux distro (Ubuntu) install করে দেয়। Restart চাইবে — restart করে দাও।
 
-Already WSL thakle just update koro:
+আগে থেকেই WSL থাকলে শুধু update করো:
 
 ```powershell
 wsl --update
 ```
 
-Version check korte:
+Version চেক করতে:
 
 ```powershell
 wsl --version
 ```
 
-> Docker Desktop er jonno WSL version 2.1.5 ba tar upore lagbe.
+> Docker Desktop-এর জন্য WSL version ২.১.৫ বা তার উপরে লাগবে।
 
 ---
 
-## Step 2: Docker Desktop Installer Download + Install
+## ধাপ ২: Docker Desktop Installer Download ও Install
 
-1. Download link: [Docker Desktop for Windows (x86_64)](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
-2. `.exe` file e double-click koro
-3. Installer duita option debe:
-   - **Per-user** (recommended) — admin lagbe na, `%LOCALAPPDATA%\Programs\DockerDesktop` e install hobe
-   - **All users** — admin lagbe
-   
-   Tumi সাধারণত **per-user** option nile shohoj hobe.
-4. Configuration page e **"Use WSL 2 instead of Hyper-V"** checked ache kina dekhe nao (thik ache, ei ta default)
-5. Wizard follow kore install complete koro
+১. Download link: [Docker Desktop for Windows (x86_64)](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
 
-### Command Line diye Install (alternative)
+২. `.exe` ফাইলে double-click করো
+
+৩. Installer দুইটা option দেবে:
+   - **Per-user** (recommended) — admin লাগবে না, `%LOCALAPPDATA%\Programs\DockerDesktop`-এ install হবে
+   - **All users** — admin লাগবে
+
+
+৪. Configuration page-এ **"Use WSL 2 instead of Hyper-V"** checked আছে কিনা দেখে নাও (ঠিক আছে, এটা default)
+
+৫. Wizard অনুসরণ করে install সম্পূর্ণ করো
+
+### Command Line দিয়ে Install (বিকল্প)
 
 ```console
 "Docker Desktop Installer.exe" install --user
@@ -47,32 +49,32 @@ wsl --version
 
 ---
 
-## Step 4: Docker Desktop Start Kora
+## ধাপ ৪: Docker Desktop চালু করা
 
-- Start menu theke "Docker Desktop" search kore open koro
-- Prothom bar open korle Docker Subscription Service Agreement dekhabe — **Accept** dite hobe (personal/non-commercial use free)
-- Docker whale icon (🐳) taskbar e dekha gele bujbe Docker running
+- Start menu থেকে "Docker Desktop" search করে ওপেন করো
+- প্রথমবার ওপেন করলে Docker Subscription Service Agreement দেখাবে — **Accept** দিতে হবে (personal/non-commercial use ফ্রি)
+- Docker whale icon (🐳) taskbar-এ দেখা গেলে বুঝবে Docker running
 
 ---
 
-## Step 5: Verify Install
+## ধাপ ৫: Install Verify করা
 
-CMD/PowerShell e:
+CMD/PowerShell-এ:
 
 ```console
 docker --version
 docker run hello-world
 ```
 
-`hello-world` container successfully run hole bujbe sob thik ache.
+`hello-world` container successfully run হলে বুঝবে সব ঠিক আছে।
 
 ---
 
 ## Note: RAM Optimization
 
-Tomar RAM 8GB — eta minimum requirement exactly pura kore, kintu Docker chalanor shomoy jodi multiple heavy container run koro tahole system slow lagte pare, cause WSL2 nijei kichu RAM eat kore.
+তোমার RAM ৮GB — এটা minimum requirement ঠিক ঠিক পূরণ করে, কিন্তু Docker চালানোর সময় যদি একাধিক heavy container run করো তাহলে system slow লাগতে পারে, কারণ WSL2 নিজেই কিছু RAM eat করে।
 
-Bhalo hoy `.wslconfig` file diye WSL2 er memory usage limit set kore rakhle:
+ভালো হয় `.wslconfig` ফাইল দিয়ে WSL2-এর memory usage limit set করে রাখলে:
 
 ```
 [wsl2]
@@ -81,7 +83,7 @@ memory=4GB
 
 File location: `%USERPROFILE%\.wslconfig`
 
-Eta korle WSL2 max 4GB use korbe, baki RAM Windows er onno kaj er jonno free thakbe.
+এটা করলে WSL2 সর্বোচ্চ 4GB use করবে, বাকি RAM Windows-এর অন্য কাজের জন্য free থাকবে।
 
 ---
 
