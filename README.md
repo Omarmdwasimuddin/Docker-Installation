@@ -1,32 +1,7 @@
 # Docker Desktop Windows Installation Guide
 
-## ধাপ ১: WSL 2 Enable ও Update করা
 
-PowerShell বা CMD **Administrator হিসেবে** ওপেন করে:
-
-```powershell
-wsl --install
-```
-
-এই command WSL feature চালু করে, এবং default Linux distro (Ubuntu) install করে দেয়। Restart চাইবে — restart করে দাও।
-
-আগে থেকেই WSL থাকলে শুধু update করো:
-
-```powershell
-wsl --update
-```
-
-Version চেক করতে:
-
-```powershell
-wsl --version
-```
-
-> Docker Desktop-এর জন্য WSL version ২.১.৫ বা তার উপরে লাগবে।
-
----
-
-## ধাপ ২: Docker Desktop Installer Download ও Install
+## ধাপ 1: Docker Desktop Installer Download ও Install
 
 ১. Download link: [Docker Desktop for Windows (x86_64)](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
 
@@ -49,7 +24,7 @@ wsl --version
 
 ---
 
-## ধাপ ৪: Docker Desktop চালু করা
+## ধাপ 2: Docker Desktop চালু করা
 
 - Start menu থেকে "Docker Desktop" search করে ওপেন করো
 - প্রথমবার ওপেন করলে Docker Subscription Service Agreement দেখাবে — **Accept** দিতে হবে (personal/non-commercial use ফ্রি)
@@ -57,7 +32,7 @@ wsl --version
 
 ---
 
-## ধাপ ৫: Install Verify করা
+## ধাপ 3: Install Verify করা
 
 CMD/PowerShell-এ:
 
