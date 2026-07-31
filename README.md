@@ -2,7 +2,7 @@
 
 ## ধাপ ১: Docker Desktop Installer Download ও Install
 
-#### Visit: https://www.docker.com/
+#### Visit: https://www.docker.com/ --->click: Docs --->click: Get started --->click: Get Docker --->click: Docker Desktop for Windows
 #### ১. Download link: [Docker Desktop for Windows (x86_64)](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
 #### ২. `.exe` ফাইলে double-click করো
 #### ৩. Installer দুইটা option দেবে:
